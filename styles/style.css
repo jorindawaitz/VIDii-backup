@@ -2,6 +2,9 @@
 *, *::after, *::before {
   box-sizing:border-box;  
 }
+:root {
+--h1Kleur: crimson;
+}
 
 html, body {
   height:100%;
@@ -14,6 +17,169 @@ button:not([disabled]) {
 
 /* jouw CSS vanaf hier */
 
+
 h1 {
-  color:crimson;
+  color: var(--h1Kleur);
+  padding-top: 2em;
+  padding-left: 2em;
 }
+header p {
+  color:rgb(255, 255, 255);
+  padding-top: 0em;
+  padding-left: 12.5em;
+}
+
+#stuurwiel {
+	width:24em;
+  margin-left: 14em; 
+  margin-top: 8em; 
+}
+
+/* #mickey-foto {
+  width: 14em;
+  margin-left: -0.5em; 
+  margin-top: 10em;
+} */
+
+#tekstvak {
+  width:20em;
+  height:30em;
+  margin-left: 60em; 
+  margin-top: 1em; 
+  padding:1em 2em 2em 2em;
+  background-color: rgba(102, 66, 7, 0.75);
+  border-radius:92% 8% 77% 23% / 0% 93% 7% 100%;
+  box-shadow:
+    inset -.25em -.25em .25em rgb(87, 54, 2),
+    inset .25em .25em .25em rgb(69, 56, 36),
+   
+  
+  ;
+}
+
+/* zorgt dat secties naast elkaar komen */
+section.inline, img.inline { float:left; }
+.clearBoth { clear:both; }
+
+@keyframes draaien {
+	0% {
+		transform:rotate(0turn);
+	}
+	100% {
+		transform:rotate(2.5turn);
+	}
+}
+
+img.draaien {
+	animation-name:draaien;
+	animation-duration:2s;
+	/* animation-iteration-count:infinite; */
+	animation-timing-function:ease-out;
+}
+
+
+body {
+  background-image: url('../images/mickey_achtergrond-01.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: cover;
+
+  width: 1445px;
+  height: 800px;
+}
+/* Mickey */
+main section img{
+  transform: scaleX(-1);
+  width: 14em;
+  margin-left: -0.5em; 
+  margin-top: 10em;
+}
+
+/* EETSTE VERSIE */
+/* Zet de visuele nummering uit */
+/* ol, ul {
+  list-style-type: none;
+} */
+
+/* #mickey1 {
+    content: url('../images/mickey.1.png');
+    transform: scaleX(-1);
+    display: block;
+  }
+#tekst1 {
+  display: block;
+}
+
+#mickey2 {
+  content: url('../images/mickey.2.png');
+  transform: scaleX(-1);
+  display: none;
+}
+#tekst2 {
+  display: none;
+}
+
+#mickey3 {
+  content: url('../images/mickey.3.png');
+  transform: scaleX(-1);
+  display: none;
+}
+#tekst3 {
+  display: none;
+}
+#mickey4 {
+  content: url('../images/mickey.4.png');
+  transform: scaleX(-1);
+  display: none;
+}
+#tekst4 {
+  display: none;
+}
+#mickey5 {
+  content: url('../images/mickey.5.png');
+  transform: scaleX(-1);
+  display: none;
+}
+#tekst5 {
+  display: none;
+}
+#mickey6 {
+  content: url('../images/mickey.6.png');
+  transform: scaleX(-1);
+  display: none;
+}
+#tekst6 {
+  display: none;
+}
+#mickey7 {
+  content: url('../images/mickey.7.png');
+  transform: scaleX(-1);
+  display: none;
+}
+#tekst7 {
+  display: none;
+}
+#mickey8 {
+  content: url('../images/mickey.8.png');
+  transform: scaleX(-1);
+  display: none;
+}
+#tekst8 {
+  display: none;
+}
+#mickey9 {
+  content: url('../images/mickey.9.png');
+  transform: scaleX(-1);
+  display: none;
+}
+#tekst9 {
+  display: none;
+}
+#mickey10 {
+  content: url('../images/mickey.10.png');
+  transform: scaleX(-1);
+  display: none;
+}
+#tekst10 {
+  display: none;
+} */
